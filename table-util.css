@@ -3,7 +3,7 @@
   margin: 0.2rem;
 }
 .table-search-active{
-  background: rgba($color_purple, 0.2);
+  background: rgba(black, 0.2);
   font-weight: bold;
 }
 .table-search-filter{
@@ -13,9 +13,8 @@
 .table-search-filter:after{
   margin-left: 0.5rem;
   content: "▼";
-  color: $color_white;
   opacity: 0.5;
-  @include transition(opacity);
+  transition: opacity 0.2s ease;
 }
 .table-search-filter.table-search-filter-reversed:after{
   content: "▲";
