@@ -1,0 +1,25 @@
+.table-search{
+  padding: 0.2rem 0.5rem;
+  margin: 0.2rem;
+}
+.table-search-active{
+  background: rgba($color_purple, 0.2);
+  font-weight: bold;
+}
+.table-search-filter{
+  position: relative;
+  cursor: pointer;
+}
+.table-search-filter:after{
+  margin-left: 0.5rem;
+  content: "▼";
+  color: $color_white;
+  opacity: 0.5;
+  @include transition(opacity);
+}
+.table-search-filter.table-search-filter-reversed:after{
+  content: "▲";
+}
+.table-search-filter.table-search-filter-active:after{
+  opacity: 1;
+}
